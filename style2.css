@@ -1,81 +1,47 @@
 body {
-    background-color: rgb(238, 226, 210);
-    margin: 0px;
+    background-color: antiquewhite;
 }
 
-.first {
-    margin: 20px;
-    width: 200px;
-    height: 200px;
-    background-color: cyan;
+h1 {
+    text-align: justify;
 
-    /* position: relative; */
-
-    /* overflow: auto; */
-
-    /* box-shadow: 12 3 6 4 red; */
 }
 
-
-.second {
-    width: 200px;
-    height: 200px;
-    background-color: rgb(71, 131, 131);
-
-    /* position: relative;
-    left: 20px; */
-
-    /* position: absolute;
-    left: 20px; */
-
-    position: fixed;
+.one {
+    text-align: justify;
 }
 
-a:hover {
-    font-size: 30px;
-
-    color: darkmagenta;
+#va {
+    vertical-align: super;
 }
 
-.parent {
-
-    margin: 20px;
-    width: 900px;
-    height: 350px;
-    background-color: darkgray;
-
-    display: flex;
-
-    /* flex-direction: row; */
-
-    /* flex-wrap: wrap; */
-
-    /* justify-content: space-between; */
-
-
-    align-items: center;
-    justify-content: center;
+i {
+    text-decoration-line: underline;
+    text-transform: uppercase;
 }
 
-.v1 {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(235, 109, 109);
+/* text-indent */
+p {
+    text-indent: 100px;
+
+
+    /* The word-spacing property increases or decreases the white space between words. */
+    white-space: -20px;
 }
 
-
-.v2 {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(97, 244, 77);
-
-    /* order: 1; */
-    /* flex-shrink: 2; */
+.ts1 {
+    text-shadow: 2px 2px;
 }
 
+.ts2 {
+    text-shadow: 2px 2px 2px rgb(224, 99, 99);
+}
 
-.v3 {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(71, 116, 222);
+.ts3 {
+    color: antiquewhite;
+    text-shadow: 2px 2px 0.2px black;
+}
+
+.red-neon {
+    text-shadow: 0 0 1px red, 0 0 1px blueviolet;
 }

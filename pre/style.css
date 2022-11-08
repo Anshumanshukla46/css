@@ -1,0 +1,48 @@
+.rect {
+    width: auto;
+    height: auto;
+    /* background-color: rgb(58, 182, 248); */
+
+    color: cornsilk;
+
+    line-height: 40px;
+
+    word-spacing: 20px;
+
+    background-image: url(./images/purple.jpg), url(./images/plane.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-attachment: scroll;
+
+    display: inline-block;
+
+    margin: auto;
+
+    width: 70%;
+}
+
+.rect p {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.rect p i {
+    font-weight: bolder;
+
+    text-transform: uppercase;
+
+    text-decoration: underline;
+}
+
+.cir {
+    /* margin-top: 30px; */
+    /* width: auto; */
+    /* vertical-align: top; */
+    display: inline-block;
+    /* height: 100px; */
+    background-color: #190f38;
+}

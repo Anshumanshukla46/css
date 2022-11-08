@@ -1,48 +1,39 @@
-.rect {
-    width: auto;
-    height: auto;
-    /* background-color: rgb(58, 182, 248); */
-
-    color: cornsilk;
-
-    line-height: 40px;
-
-    word-spacing: 20px;
-
-    background-image: url(./images/purple.jpg), url(./images/plane.jpg);
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    background-attachment: scroll;
-
-    display: inline-block;
-
-    margin: auto;
-
-    width: 70%;
+/* left .border */
+.border {
+    background-color: #ddffff;
+    /* left border; */
+    border-color: lightskyblue;
+    border-width: 0 0 0 4px;
+    border-style: solid;
+    /* padding: 3px; */
 }
 
-.rect p {
-    color: white;
-    font-weight: bold;
-    text-align: center;
+/* border style and color is must */
+
+.para {
+    border-style: solid;
+    border-color: rgb(91, 88, 88) cyan rebeccapurple red;
+    border-width: 4px;
+
+    border-radius: 20px;
+    padding: auto;
 }
 
-.rect p i {
-    font-weight: bolder;
+.tb {
 
-    text-transform: uppercase;
+    background-color: burlywood;
 
-    text-decoration: underline;
+    border-style: solid;
+    border-width: 2px 0px 2px 0px;
+    border-color: cadetblue;
+
+    margin: 20px;
 }
 
-.cir {
-    /* margin-top: 30px; */
-    /* width: auto; */
-    /* vertical-align: top; */
-    display: inline-block;
-    /* height: 100px; */
-    background-color: #190f38;
+.outline {
+    border: 2px solid black;
+    outline: 2px solid red;
+
+    /* outline-offset:  is the space between whole box(content, padding, border, margin) */
+    outline-offset: 5px;
 }

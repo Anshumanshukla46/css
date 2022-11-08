@@ -1,0 +1,81 @@
+body {
+    background-color: rgb(238, 226, 210);
+    margin: 0px;
+}
+
+.first {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: cyan;
+
+    /* position: relative; */
+
+    /* overflow: auto; */
+
+    /* box-shadow: 12 3 6 4 red; */
+}
+
+
+.second {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(71, 131, 131);
+
+    /* position: relative;
+    left: 20px; */
+
+    /* position: absolute;
+    left: 20px; */
+
+    position: fixed;
+}
+
+a:hover {
+    font-size: 30px;
+
+    color: darkmagenta;
+}
+
+.parent {
+
+    margin: 20px;
+    width: 900px;
+    height: 350px;
+    background-color: darkgray;
+
+    display: flex;
+
+    /* flex-direction: row; */
+
+    /* flex-wrap: wrap; */
+
+    /* justify-content: space-between; */
+
+
+    align-items: center;
+    justify-content: center;
+}
+
+.v1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(235, 109, 109);
+}
+
+
+.v2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(97, 244, 77);
+
+    /* order: 1; */
+    /* flex-shrink: 2; */
+}
+
+
+.v3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(71, 116, 222);
+}
