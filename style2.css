@@ -45,3 +45,79 @@ p {
 .red-neon {
     text-shadow: 0 0 1px red, 0 0 1px blueviolet;
 }
+
+
+/* you can also use many fonts type like as Google fonts */
+
+/* always have more than one font-family as of os/browser is not able be install one then could you other called as fallback points */
+
+
+/* also try to make one font-family as the heading and make other in way to have good contrast also
+
+example : Ubuntu as heading, Lore as paragraph
+
+*/
+.fonts {
+    font-family: sans-serif;
+    font-style: oblique;
+
+    /* try to use em for font-size as 1em = 16px 
+    as it will help in resizing also .
+    and set body font-size : 100%
+    */
+
+    font-size: 1em;
+}
+
+.div-btn {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+
+    margin: auto;
+}
+
+.btn {
+    height: 70px;
+    width: 70px;
+    margin: 50px;
+
+    background-color: rgb(56, 198, 246);
+}
+
+.like {
+    margin-left: 10px;
+    padding: 15px 25px;
+    background-color: #f44336;
+    color: white;
+
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.like:hover {
+    background-color: red;
+}
+
+.l2 {
+    border: 2px green solid;
+    padding: 15px 25px;
+    margin: 2px;
+
+    text-decoration: none;
+    color: black;
+}
+
+.l2:hover {
+    /* outline: 17px 27px green; */
+    background-color: green;
+    color: white;
+}
+
+.progress {
+    cursor: progress;
+}
+
+.wait {
+    cursor: wait;
+}

@@ -1,0 +1,74 @@
+.unorder {
+    /* list-style-type: square; */
+    list-style-image: url(./images/verticle_align.jpg);
+
+    list-style-position: inside;
+}
+
+.blue {
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(77, 203, 246);
+
+}
+
+.blue li {
+    background-color: rgb(201, 230, 239);
+}
+
+/* table */
+
+/* 
+.t1 {
+    width: 80%;
+    height: 150px;
+}
+
+.t1 th,
+td {
+    border-bottom: 2px solid brown;
+    border-collapse: collapse;
+
+    text-align: center;
+    vertical-align: baseline;
+} */
+
+
+.hoverable {
+    width: 80%;
+    height: 150px;
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+}
+
+.hoverable td,
+th {
+    border-bottom: 2px solid black;
+}
+
+.hoverable tr:hover {
+    background-color: coral;
+    border: 2px solid white;
+}
+
+.strip td,
+th {
+    border-bottom: 2px solid black;
+}
+
+.strip {
+    width: 80%;
+    height: 70px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.strip th {
+    background-color: rgb(11, 221, 151);
+    color: white;
+}
+
+.strip tr:nth-child(even) {
+    background-color: gray;
+}
