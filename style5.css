@@ -1,0 +1,67 @@
+.overflow {
+    background-color: blueviolet;
+    color: white;
+
+    width: 100px;
+    height: 200px;
+    overflow: auto;
+}
+
+.float {
+    background-color: azure;
+    width: auto;
+    height: auto;
+}
+
+.sample {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+/* div {
+    float: left;
+    padding: 15px;
+} */
+
+.div3 {
+    border: 2px solid green;
+    width: 300px;
+    height: auto;
+
+    float: right;
+}
+
+.div4 {
+    width: 300px;
+    height: auto;
+    border: 2px solid saddlebrown;
+
+    clear: right;
+}
+
+.psuedo-div:hover p {
+    display: block;
+}
+
+.para-div {
+    background-color: yellow;
+    display: none;
+}
+
+.psuedo-div::before {
+    content: url('./images/pineapple.jpg');
+    width: 100px;
+    height: 100px;
+}
+
+.image-opacity img {
+    width: 400px;
+    height: 400px;
+    opacity: 0.2;
+
+}
+
+.image-opacity img:hover {
+    opacity: 1;
+}

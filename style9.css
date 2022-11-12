@@ -1,0 +1,84 @@
+body {
+    background-color: gainsboro;
+}
+
+a[target] {
+    background-color: yellow;
+}
+
+input[id="pwd"] {
+    background-color: lightblue;
+}
+
+input[id="name"] {
+    background-color: lightblue;
+
+    color: red;
+}
+
+label {
+    font-size: larger;
+}
+
+/* use padding to get have spaces around  ans use box-sizing for adding padding in it */
+input {
+    width: 170px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+
+    /* border-bottom: 1px solid gray; */
+    /* border-radius: 2px; */
+    /* background-color: green; */
+
+    color: black;
+    font-size: larger;
+}
+
+input:focus {
+    border: 2px solid #555;
+}
+
+/* can have the image in "input" field as well using 
+the background-image property and position it with the background-position property. Also notice that we add a large left padding to reserve the space of the icon:
+
+*/
+input[id="fname"] {
+    background-image: url(./images/verticle_align.jpg);
+    background-repeat: no-repeat;
+    background-position: 10px 15px;
+
+    padding-left: 30px;
+
+    width: 170px;
+}
+
+/* :focus means when we have click to enter some text */
+input:focus {
+    transition: width 0.4s ease-in-out;
+    width: 60%;
+}
+
+
+
+textarea {
+    background-color: #f8f8f8;
+    border-radius: 2px;
+    border: 2px solid #555;
+
+    resize: none;
+}
+
+select {
+    width: 60%;
+    padding: 20px;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+/* can use multiple */
+input[id="fname"],
+input[id="lname"],
+input[id="password"] {
+    background-color: #f1f1f1;
+
+}

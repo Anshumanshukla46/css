@@ -1,0 +1,163 @@
+.translate {
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+
+    text-align: center;
+
+    transform: translate(40px, 60px);
+}
+
+.rotate {
+    background-color: yellow;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+
+    text-align: center;
+
+    transform: rotate(20deg);
+}
+
+.skew {
+    background-color: green;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+
+    text-align: center;
+
+    transform: skew(20deg, 10deg);
+}
+
+.matrix {
+    background-color: rgb(191, 28, 28);
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+
+    text-align: center;
+
+    transform: matrix(20px, 10px, 5px, 5px, 10px, 12px, 10px);
+}
+
+.rotateX {
+    background-color: lightblue;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+
+    transform: rotateX('150deg');
+}
+
+.transition {
+    background-color: cadetblue;
+    color: whitesmoke;
+    width: 400px;
+    padding: 20px;
+
+    /* transition: ; */
+
+
+    transition: width 1s, background-color 1s, transform 2s;
+
+    /* customized property */
+    /* motion type  */
+    transition-timing-function: ease-in-out;
+
+    transition-delay: 1s;
+}
+
+.transition:hover {
+    width: 600px;
+    background-color: darkgray;
+
+    transform: rotate(180deg);
+}
+
+.animation {
+    padding: 19px;
+    text-align: center;
+    color: whitesmoke;
+    width: 100px;
+    height: 60px;
+    background-color: red;
+
+
+    /* animation */
+    animation-name: change;
+    animation-duration: 4s;
+
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate-reverse;
+}
+
+@keyframes change {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: blue;
+    }
+}
+
+#mydiv1,
+#mydiv2,
+#mydiv3,
+#mydiv4,
+#mydiv5 {
+    width: 100px;
+    height: 50px;
+    background-color: lightblue;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+
+    animation-name: motion;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+#mydiv1 {
+    animation-timing-function: linear;
+}
+
+#mydiv2 {
+    animation-timing-function: ease;
+}
+
+#mydiv3 {
+    animation-timing-function: ease-in;
+}
+
+
+#mydiv4 {
+    animation-timing-function: ease-in-out;
+}
+
+#mydiv5 {
+    animation-timing-function: ease-out;
+}
+
+@keyframes motion {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 90%;
+    }
+}

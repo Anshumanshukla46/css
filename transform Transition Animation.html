@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Transition Animation</title>
+
+    <link rel="stylesheet" href="style13.css">
+</head>
+
+<body>
+    <!-- 2d Transform -->
+    <div class="translate">
+        This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+    </div>
+
+    <div class="rotate">
+        This div element is rotated clockwise 20 degrees.
+    </div>
+
+    <div class="skew">
+        This div element is skewed 20 degrees along the X-axis.
+    </div>
+    <br><br><br><br>
+    <div class="matrix">
+        combination of all Transform:
+
+        The parameters are as follow: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+    </div>
+
+
+    <br>
+    <hr>
+
+    <h2>3D Transform</h2>
+
+    <div class="rotateX">
+        I am tranform : rotateX
+    </div>
+    <br>
+    <hr>
+
+    <!-- transition -->
+
+
+    <h1>Transition</h1>
+    <div class="transition">
+        To create a transition effect, you must specify two things:
+
+        <ul>
+            <li>the CSS property you want to add an effect to</li>
+            <li>the duration of the effect</li>
+        </ul>
+
+        <strong>Note: If the duration part is not specified, the transition will have no effect, because the default
+            value is 0.</strong>
+    </div>
+
+    <br>
+    <hr>
+
+    <!-- Animation -->
+    <h1>Animation using @keyframe</h1>
+
+    will be initiated once page is loaded
+
+    <p>In the example above we have specified when the style will change by using the keywords "from" and "to" (which
+        represents 0% (start) and 100% (complete)).</p>
+
+    <div class="animation">
+        Animation...
+    </div>
+    <br><br><br>
+    <!-- good one -->
+
+    <p>The animation-timing-function property specifies the speed curve of the animation. The following example shows
+        some of the different speed curves that can be used:</p>
+
+    <div id="mydiv1">linear</div><br>
+    <div id="mydiv2">ease</div><br>
+    <div id="mydiv3">ease-in</div><br>
+    <div id="mydiv4">ease-out</div><br>
+    <div id="mydiv5">ease-in-out</div><br>
+
+</body>
+
+</html>

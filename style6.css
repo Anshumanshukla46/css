@@ -1,0 +1,54 @@
+.horizontal-dark ul {
+    margin: 0px;
+    padding: 0px;
+
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(51, 51, 51);
+
+    /* for fixed layout */
+    /* position: fixed;
+    top: 0px;
+    width: 100%; */
+}
+
+.horizontal-dark li {
+    display: inline-block;
+
+    float: left;
+
+    border: 1px solid #bbb;
+}
+
+.horizontal-dark li a {
+    display: block;
+    padding: 14px 16px;
+    background-color: #dddddd;
+
+    text-align: center;
+    color: white;
+
+    text-decoration: none;
+}
+
+.horizontal-dark li a:hover {
+    background-color: #04AA6D;
+}
+
+.horizontal-dark li a:hover:not(.some) {
+    background-color: #111;
+}
+
+#home {
+    background-color: #04AA6D;
+}
+
+#some {
+    float: right;
+}
+
+
+.verical-nav {
+    text-decoration: none;
+    list-style-type: none;
+}

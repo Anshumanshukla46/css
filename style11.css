@@ -1,0 +1,74 @@
+.border-radius {
+
+    /* 
+    border-radius: is acctually a border-bottom-left-radius: like term  
+    */
+
+    border-bottom-left-radius: 20px;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+
+    padding: 20px;
+}
+
+.border-image {
+    border: 10px solid transparent;
+    padding: 15px;
+
+    /* Shorthand property for setting 'border-image-source', 'border-image-slice', 'border-image-width', 'border-image-outset' and 'border-image-repeat'. Omitted values are set to their initial values. */
+
+    /* here many varieties like round/stretch */
+    border-image: url("./images/border-image.png") 30 stretch;
+
+    /* single change could be huge impact */
+    border-image: url("./images/border-image.png") 20% stretch;
+
+    text-align: center;
+}
+
+
+.background-image {
+    padding: 16px;
+
+    /* first image will be on the top */
+    background-image: url(./images/img_flwr.gif), url(./images/paper.jpeg);
+
+    background-position: top left, bottom right;
+
+    background-repeat: no-repeat, repeat;
+
+    background-size: 100px 80px, auto;
+}
+
+html {
+    background: url(./images/photographer.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.background-origin {
+    background-image: url(./images/img_flwr.gif);
+
+    background-repeat: no-repeat;
+    border: 10px solid black;
+    color: white;
+
+    /* 
+        background-origin -
+        padding-box(from top left of padding)
+        border-box(from top left of border)
+        content-box(from top left of content)
+    */
+
+    /* 
+    The property takes three different values:
+background-clip: ;
+border-box - (default) the background is painted to the outside edge of the border
+padding-box - the background is painted to the outside edge of the padding
+content-box - the background is painted within the content box
+*/
+
+    background-origin: padding-box;
+
+
+}

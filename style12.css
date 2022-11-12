@@ -1,0 +1,99 @@
+div.gradient-background {
+    width: 200px;
+    height: 200px;
+
+    background-image: linear-gradient(red, yellow);
+
+}
+
+div.gradient-background-rainbow {
+
+    width: 700px;
+    height: 200px;
+    background-color: linear-gradient(to left, red, orange, yellow, green, blue, indigo, violet);
+}
+
+h2 {
+    color: gray;
+    text-shadow: 2px 2px 5px red;
+}
+
+.div-box {
+    width: 200px;
+    height: 50px;
+    padding: 20px;
+
+    background-color: aqua;
+    box-shadow: 10px 10px lightblue;
+
+    /* with blur effect */
+    box-shadow: 10px 10px 3px lightblue;
+}
+
+div.card {
+    width: 250px;
+    text-align: center;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header {
+    background-color: #4cb050;
+    color: white;
+
+    padding: 10px;
+    font-size: 40px;
+}
+
+.image-card {
+    width: 250px;
+    text-align: center;
+
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.image-header img {
+    width: 250px;
+}
+
+/* text-overflow */
+.clip {
+    white-space: nowrap;
+    width: 200px;
+    border: 2px solid black;
+    width: 200px;
+
+    /* hidden will hide the more text */
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    width: 200px;
+    border: 2px solid black;
+    width: 200px;
+
+    /* ellipsis : "..." */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ellipsis:hover {
+    transition: width 0.4s ease-in-out;
+    border: 2px solid black;
+    width: 375px;
+    overflow: visible;
+}
+
+.word-wrap {
+    width: 11em;
+    border: 1px solid #000000;
+
+    /* word is dissociated */
+    word-wrap: break-word;
+    /* keep-all or break-all*/
+
+}

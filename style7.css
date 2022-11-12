@@ -1,0 +1,40 @@
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    background-color: #f1f1f1;
+
+    /* for sticky at left: ; */
+
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    padding: 8px 16px;
+
+    color: #000;
+    text-decoration: none;
+
+    text-align: center;
+
+    border-bottom: 1px solid #555;
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.active {
+    background-color: #04a96d;
+    color: white;
+}
+
+p {
+    margin-left: 27%;
+}

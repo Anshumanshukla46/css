@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and Forms</title>
+
+    <link rel="stylesheet" href="style9.css">
+
+</head>
+
+<body>
+
+    <!-- Attribute selector -->
+    <!-- 
+
+        img[alt] -> only need to present
+        img[alt="this"] -> exact same
+        img[alt~="this"] -> just be present
+        img[alt|="this"] -> whole word or alone or separated with (-)
+        img[alt^="this"] -> start with
+        img[alt$="this"] -> start with
+        img[alt*="this"] -> only present
+
+     -->
+    <a href="http://www.google.com">Google</a>
+    <a href="http://www.google.com" target="_main">Google</a>
+
+    <br><br>
+
+    <!-- form styling -->
+
+    <form class="first">
+        <label for="name">Enter name: </label>
+        <input type="text" name="name" id="name"> <br> <br>
+
+        <label for="pwd">Enter password: </label>
+        <input type="password" name="pwd" id="pwd"> <br>
+
+    </form> <br><br>
+
+    <hr>
+
+    <h2>Using CSS to style an HTML Form
+    </h2>
+    <form action="action.php" class="styling">
+
+        <label for="fname">Enter first name: </label>
+        <input type="text" name="fname" id="fname" placeholder="&#8249-  an image"> <br> <br>
+
+        <label for="lname">Enter last name: </label>
+        <input type="text" name="lname" id="lname"> <br> <br>
+
+        <label for="country">Select a country: </label>
+        <select id="country">
+            <option value="India">India</option>
+            <option value="Japan">Japan</option>
+            <option value="United States">United States</option>
+        </select> <br><br>
+
+        <label for="password">Enter password: </label>
+        <input type="password" name="pwd" id="password"> <br> <br>
+
+
+        <label for="textarea">Enter some text : </label>
+        <textarea name="summary" id="textarea" cols="30" rows="10">Enter some text</textarea>
+
+    </form>
+
+
+</body>
+
+</html>

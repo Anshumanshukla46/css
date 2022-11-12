@@ -1,0 +1,21 @@
+body {
+    /* initiating the counter-reset: ; */
+
+    /* heading is just a name of variable */
+    counter-reset: heading;
+}
+
+h3::before {
+    counter-increment: heading;
+    content: "counter heading" counter(heading) " - ";
+}
+
+
+h1 {
+    counter-reset: h1;
+}
+
+h1::before {
+    counter-increment: h1;
+    content: "Incrementer " counter(h1) " -> ";
+}
