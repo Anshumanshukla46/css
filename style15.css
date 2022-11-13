@@ -1,0 +1,84 @@
+.pageFB {
+    display: inline-block;
+
+}
+
+.pageFB a {
+    float: left;
+    color: black;
+    text-decoration: none;
+
+    height: 30px;
+    width: 50px;
+
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+
+    transition: background-color .3s;
+}
+
+.pageFB a:hover {
+    background-color: green;
+    color: white;
+}
+
+.pageFB a#active {
+    background-color: gray;
+    color: white;
+}
+
+.multi-col {
+    columns: 3;
+    column-gap: 40px;
+
+    /* rule is the line between */
+    column-rule-style: solid;
+    column-rule-width: 2px;
+    column-rule-color: lightblue;
+
+    column-width: 100px;
+}
+
+.multi-col h2 {
+    column-span: all;
+    text-align: center;
+}
+
+/* css variable */
+
+:root {
+    /* var(--name, value)  */
+
+    /* declaration */
+    --blue: #1e90ff;
+    --white: #ffffff;
+    /* all these are global variables */
+}
+
+body {
+    /* using the variable */
+    background-color: var(--blue);
+    color: var(--white);
+
+}
+
+
+.multi-col {
+    /* local variable will override the global variable */
+
+    --blue: #1e10ff
+}
+
+.multi-col h2 {
+    color: var(--blue);
+}
+
+/* "media queries" for handling other devices(like phone, tablet, laptop, big-screen) */
+
+/* it means on screen whose size is more or equal to 480px this body color will applied */
+@media screen and (min-width: 480px) {
+    body {
+        background-color: wheat;
+    }
+}
