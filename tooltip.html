@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tootip++</title>
+
+    <link rel="stylesheet" href="style14.css">
+</head>
+
+<body>
+
+    <div class="tooltip">
+        Hover over me
+        <span>I am due to tooltip.</span>
+    </div>
+
+
+    <hr> <br>
+
+    <div class="img-shadow">
+        <img src="./images/paris.jpg" alt="paris" width="100px" height="100px">
+    </div>
+
+    <img src="./images/pineapple.jpg" alt="pineapple" id="pa"> <br><br>
+
+    <!-- images hovered text -->
+    <div class="hover-image-text">
+
+        <img src="./images/img_avatar3.png" alt="avtar" width="250px" height="250px">
+
+        <div class="name">
+            John Doe
+        </div>
+
+    </div> <br><br>
+
+    <div class="text-right">
+
+        <img src="./images/img_avatar3.png" alt="avtar" width="250px" height="250px">
+
+        <div class="myRightName">
+            John Doe
+        </div>
+
+    </div>
+
+
+    <!-- object-fit : used when we want to resize the image by keeping some of image property.
+
+    1.fill = fill - This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit
+    2.contain - The image keeps its aspect ratio, but is resized to fit within the given dimension
+    3.cover - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit
+    4.none - The image is not resized
+    5.scale-down - the image is scaled down to the smallest version of none or contain.
+
+-->
+
+    <h1>Masking images</h1>
+    <div class="mask-image">
+        <img src="./images/img_5terre.jpg" alt="italy" width="400px" height="600px">
+    </div>
+
+    <!-- buttons -->
+    <h2>Styled Button</h2>
+
+    <button id="colored">Hover me</button>
+
+    <br><br>
+    <div class="btn-image">
+        <img src="./images/img_lights.jpg" alt="light-image" width="400px" height="400px">
+
+        <button>Button</button>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+.tooltip {
+    border-bottom: 1px dotted black;
+    position: relative;
+    display: inline-block;
+
+}
+
+.tooltip span {
+    visibility: hidden;
+    width: 120px;
+
+    background-color: gray;
+    color: whitesmoke;
+    text-align: center;
+
+    position: absolute;
+    z-index: 1;
+
+}
+
+.tooltip span::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+.tooltip:hover span {
+    visibility: visible;
+}
+
+
+.img-shadow {
+    border: 0.9px solid black;
+    padding: 2px;
+    width: 104px;
+}
+
+.img-shadow:hover {
+    box-shadow: 2px 2px 2px 4px lightblue;
+}
+
+/* image filter */
+#pa {
+    width: 100px;
+    height: 100px;
+
+    filter: grayscale(120);
+}
+
+/* .hover-image-text */
+.hover-image-text {
+    width: 250px;
+    height: 250px;
+
+    position: relative;
+}
+
+.hover-image-text img {
+    opacity: 1;
+    transition: 0.5s ease;
+
+}
+
+.name {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    text-align: center;
+
+    transform: translateY(-150px);
+
+    visibility: hidden;
+}
+
+.hover-image-text:hover img {
+    opacity: 0.3;
+}
+
+.hover-image-text:hover .name {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* text from right */
+.text-right {
+    width: 250px;
+    height: 250px;
+
+    position: relative;
+}
+
+.text-right img {
+    opacity: 1;
+
+}
+
+.myRightName {
+    background-color: #5899f4;
+    color: white;
+    font-size: 16px;
+    width: 250px;
+    height: 250px;
+
+    vertical-align: center;
+    text-align: center;
+
+    transform: translateY(-254px);
+
+    visibility: hidden;
+
+    transition: .5s ease;
+}
+
+.text-right:hover img {
+    visibility: hidden;
+}
+
+.text-right:hover .myRightName {
+    visibility: visible;
+}
+
+.mask-image {
+    mask-image: url(./images/w3logo.png);
+    mask-repeat: no-repeat;
+
+    -webkit-mask-image: url(./images/w3logo.png);
+    -webkit-mask-repeat: no-repeat;
+}
+
+/* styled button */
+
+#colored {
+    background-color: white;
+    border: 2px solid #008cba;
+    border-radius: 5px;
+    padding: 18px;
+
+    font-size: larger;
+
+    transition: 0.5s;
+}
+
+#colored:hover {
+    background-color: #008cba;
+    color: white;
+
+    cursor: pointer;
+}
+
+.btn-image {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.btn-image img {
+    width: 100%;
+    height: auto;
+}
+
+.btn-image button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-image button:hover {
+    background-color: black;
+    color: white;
+}
